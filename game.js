@@ -61,28 +61,6 @@ function getComputerSelection(){
     return chosenStrat.toLowerCase();
 }
 
-// function playGame() {
-//     let roundCount = 1;
-//     const MAXSCORE = 5;
-
-//     while (Math.max(humanScore, computerScore) < MAXSCORE) {
-//         const humanSelection = getHumanSelection();
-//         const computerSelection = getComputerSelection();   
-//         playRound(humanSelection, computerSelection);
-//         console.log(`At the end of round ${roundCount} the score is Human: ${humanScore} --> Computer: ${computerScore}`)
-//         roundCount += 1
-//     }
-
-//     if (humanScore == MAXSCORE) {
-//         console.log(`Congratulations Human. You won ${humanScore} --- ${computerScore} `)
-//     } else {
-//         console.log(`Comiseratinos Human. You lost ${humanScore} --- ${computerScore} `)
-//     }
-
-
-// }
-
-// playGame();
 
 function addEventListenersToButtons(){
     let strategyButtons = document.querySelectorAll('.HumanSelection button');

@@ -67,11 +67,11 @@ function addEventListenersToButtons(){
     
     strategyButtons.forEach((button) => {
         button.addEventListener("click", () => {
-            let computerSelection = getComputerSelection(); // Get a new computer selection for each click
+            let computerSelection = getComputerSelection(); 
 
-            playRound(button.textContent, computerSelection);  // Play a round using the new selection
-            displayStrategies(button.textContent, computerSelection);  // Display the strategies
-            displayScores();  // Display the scores
+            playRound(button.textContent, computerSelection);  
+            displayStrategies(button.textContent, computerSelection);  
+            displayScores();  
             endGame();
         });
     });
